@@ -15,11 +15,15 @@
               <a-box position='0 0.5 0' color="yellow"></a-box>
           </a-marker> -->
 
+          <a-assets>
+              <a-asset-item id="glb-asset" src="model-glb.glb"></a-asset-item>
+          </a-assets>
+
           <a-marker type='barcode' value='6'>
             <a-entity
               position="0 0 0"
-              scale="0.05 0.05 0.05"
-              gltf-model="https://raw.githubusercontent.com/chrismathew05/chrismathew05.github.io/main/model-gltf.gltf"
+              scale="0.2 0.2 0.2"
+              gltf-model="#glb-asset"
             />
           </a-marker>
 
